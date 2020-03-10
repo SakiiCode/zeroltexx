@@ -19,6 +19,7 @@ node('ben') {
       }
       stage('RepoSync') { // for display purposes
          sh """#!/bin/bash
+            echo "RepoSync is Disabled"
             /*
             set +e
             cd $env.SYSTEM_PATH
@@ -29,6 +30,7 @@ node('ben') {
       }
       stage('Build') { // for display purposes
          sh """#!/bin/bash
+            echo "Build is Disabled"
             set +e
             cd $env.SYSTEM_PATH
             export PATH=~/bin:$PATH
