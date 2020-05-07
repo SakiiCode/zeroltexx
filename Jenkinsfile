@@ -8,6 +8,7 @@ node('ben') {
             'OTA_ROMTYPE=unofficial',
             'SYSTEM_PATH=/home/benlue/android/lineage',
             'OUTPUT_PATH=/home/benlue/android/lineage/out/target/product',
+            'OUT=/home/benlue/android/lineage/out',            
             'URL=https://los-legacy.de',
             'SSH_URL=los-legacy.de',
             'LOCAL_MANIFESTS_URL=https://raw.githubusercontent.com/los-legacy/local_manifests/lineage-17.1/zero.xml',
