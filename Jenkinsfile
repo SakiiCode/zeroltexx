@@ -24,7 +24,7 @@ node('master') {
                 [$class: 'RelativeTargetDirectory', relativeTargetDir: '/home/s4k11/dev/lineageos/zeroltexx/build_script']], 
                 submoduleCfg: [], 
                 userRemoteConfigs: [[credentialsId: 'e1791597-2cce-40b2-8357-fcbc77a559d5', 
-                url: "https://github.com/los-legacy/${DEVICE}.git"]]
+                url: "https://github.com/SakiiCode/${DEVICE}.git"]]
                 ])
                 sh label: 'Preparation', script: 'bash $SYSTEM_PATH/build_script/preparation.sh'
             }
