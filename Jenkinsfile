@@ -26,16 +26,16 @@ node('master') {
                 userRemoteConfigs: [[credentialsId: 'e1791597-2cce-40b2-8357-fcbc77a559d5', 
                 url: "https://github.com/los-legacy/${DEVICE}.git"]]
                 ])
-                sh label: 'Preparation', script: 'source $SYSTEM_PATH/build_script/preparation.sh'
+                sh label: 'Preparation', script: 'bash $SYSTEM_PATH/build_script/preparation.sh'
             }
             stage('RepoSync') { // for display purposes
-                sh label: 'RepoSync', script: 'source $SYSTEM_PATH/build_script/reposync.sh'
+                sh label: 'RepoSync', script: 'bash $SYSTEM_PATH/build_script/reposync.sh'
             }
             stage('Build') { // for display purposes
-                sh label: 'Build', script: 'source $SYSTEM_PATH/build_script/build.sh'
+                sh label: 'Build', script: 'bash $SYSTEM_PATH/build_script/build.sh'
             }
             stage('OTA Upload') { // for display purposes
-                sh label: 'OTA Upload', script: 'source $SYSTEM_PATH/build_script/upload.sh'
+                sh label: 'OTA Upload', script: 'bash $SYSTEM_PATH/build_script/upload.sh'
             }
         }
     }
