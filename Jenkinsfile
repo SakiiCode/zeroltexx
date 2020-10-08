@@ -1,4 +1,4 @@
-node('ben') {
+node('master') {
     timestamps {
         withEnv([
             'DEVICE=zeroltexx',
